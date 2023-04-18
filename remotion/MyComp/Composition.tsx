@@ -9,7 +9,7 @@ export const MyComposition = ({text, mode, speed, backgroundColor}: MyCompProps)
 
   console.log('this is he mode', mode)
   const wordLength = text?.length;
-  const letterCount = Math.round(interpolate(frame, [0, parseInt(speed,10) > 0 ? parseInt(speed,10) : 1], [0, wordLength], {
+  const letterCount = Math.round(interpolate(frame, [0, speed > 0 ? speed : 1], [0, wordLength], {
     extrapolateRight: 'clamp',
   }));
 
