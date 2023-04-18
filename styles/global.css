@@ -1,3 +1,62 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "CLACON";
+    src: url("../public/clacon2.ttf");
+}
+
+.container {
+    max-width: 1920px;
+    max-height: 1080px;
+    height: 1080px;
+    font-family: 'CLACON';
+}
+
+#terminal {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: 'CLACON';
+    font-size: 96px;
+}
+
+
+input:focus {
+    outline: none;
+}
+
+.bg-gray-900 {
+    background-color: #1a202c;
+}
+
+.bg-gray-800 {
+    background-color: #2d3748;
+}
+
+.text-green-500 {
+    font-family: 'CLACON';
+    color: #48bb78;
+}
+
+.rounded-t-lg {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.rounded-b-lg {
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.animate-blink {
+    animation: blink 1s ease-in-out infinite;
+}
